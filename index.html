@@ -11,8 +11,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -35,44 +38,55 @@ contractors / employees?</li>
 </ul>
 <h1 id="home">home</h1>
 <ul class="task-list">
-<li><input type="checkbox" />install front camera</li>
-<li><input type="checkbox" />schedule truck time with kiko</li>
-<li><input type="checkbox" />make plans for skid</li>
-<li><input type="checkbox" />shed demolition</li>
-<li><input type="checkbox" />chicken coop</li>
-<li><input type="checkbox" />office shelves?</li>
+<li><label><input type="checkbox" />install front camera</label></li>
+<li><label><input type="checkbox" />schedule truck time with
+kiko</label></li>
+<li><label><input type="checkbox" />make plans for skid</label></li>
+<li><label><input type="checkbox" />shed demolition</label></li>
+<li><label><input type="checkbox" />chicken coop</label></li>
+<li><label><input type="checkbox" />office shelves?</label></li>
 </ul>
 <h1 id="servers">servers</h1>
 <ul class="task-list">
-<li><input type="checkbox" />consolidate ssh keys ## mars</li>
-<li><input type="checkbox" />fix mute key</li>
-<li><input type="checkbox" />fix brightness keys</li>
-<li><input type="checkbox" />switch double and triple finger tap ##
-neptune</li>
-<li><input type="checkbox" />update nvim config on neptune</li>
-<li><input type="checkbox" />setup rclone neptune ## saturn</li>
-<li><input type="checkbox" />file backup plan for saturn</li>
+<li><label><input type="checkbox" />consolidate ssh keys ##
+mars</label></li>
+<li><label><input type="checkbox" />fix mute key</label></li>
+<li><label><input type="checkbox" />fix brightness keys</label></li>
+<li><label><input type="checkbox" />switch double and triple finger tap
+## neptune</label></li>
+<li><label><input type="checkbox" />update nvim config on
+neptune</label></li>
+<li><label><input type="checkbox" />setup rclone neptune ##
+saturn</label></li>
+<li><label><input type="checkbox" />file backup plan for
+saturn</label></li>
 </ul>
 <h1 id="school">school</h1>
 <h2 id="mod1">mod1</h2>
 <h3 id="lectures">lectures</h3>
 <ul class="task-list">
-<li><input type="checkbox" />Lecture 1.2 Types of Environmental
-Contamination</li>
-<li><input type="checkbox" />Lecture 1.3 Assessment Regulatory
-Framework</li>
-<li><input type="checkbox" />Lecture 1.4 Applicable or Relevant and
-Appropriate Requirements</li>
-<li><input type="checkbox" />Lecture. 1.5 Chemical Specific ARARs</li>
-<li><input type="checkbox" />Lecture 1.6 Screening Levels</li>
-<li><input type="checkbox" />Lecture 1.7 Assessment Default Levels ###
-hw</li>
-<li><input type="checkbox" checked="" />1.1.1 love canal</li>
-<li><input type="checkbox" />1.1.2 contaminated site lawsuit</li>
-<li><input type="checkbox" />1.2 a comparative analysis</li>
-<li><input type="checkbox" />1.3 assessment regulatory framework</li>
-<li><input type="checkbox" />1.4 ARARS worksheet</li>
-<li><input type="checkbox" />1.5 screening levels</li>
+<li><label><input type="checkbox" />Lecture 1.2 Types of Environmental
+Contamination</label></li>
+<li><label><input type="checkbox" />Lecture 1.3 Assessment Regulatory
+Framework</label></li>
+<li><label><input type="checkbox" />Lecture 1.4 Applicable or Relevant
+and Appropriate Requirements</label></li>
+<li><label><input type="checkbox" />Lecture. 1.5 Chemical Specific
+ARARs</label></li>
+<li><label><input type="checkbox" />Lecture 1.6 Screening
+Levels</label></li>
+<li><label><input type="checkbox" />Lecture 1.7 Assessment Default
+Levels ### hw</label></li>
+<li><label><input type="checkbox" checked="" />1.1.1 love
+canal</label></li>
+<li><label><input type="checkbox" />1.1.2 contaminated site
+lawsuit</label></li>
+<li><label><input type="checkbox" />1.2 a comparative
+analysis</label></li>
+<li><label><input type="checkbox" />1.3 assessment regulatory
+framework</label></li>
+<li><label><input type="checkbox" />1.4 ARARS worksheet</label></li>
+<li><label><input type="checkbox" />1.5 screening levels</label></li>
 </ul>
 <h1 id="study">study</h1>
 <h2 id="application">application</h2>
